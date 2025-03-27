@@ -29,10 +29,43 @@ En las primeras columnas, pones todas las combinaciones de 1 y 0 para las variab
 
 ### Valores de verdad para cada símbolo:
 
-- **¬:** $\neg 1 = 0$, $\neg 0 = 1$.
-- **∨:** 1 si al menos una es 1 (1 ∨ 1 = 1, 1 ∨ 0 = 1, 0 ∨ 1 = 1, 0 ∨ 0 = 0).
-- **∧:** 1 solo si ambas son 1 (1 ∧ 1 = 1, 1 ∧ 0 = 0, 0 ∧ 1 = 0, 0 ∧ 0 = 0).
-- **→:** 0 solo si la primera es 1 y la segunda es 0 (1 → 0 = 0, 1 → 1 = 1, 0 → 0 = 1, 0 → 1 = 1).
+#### Negación (¬)
+| P | ¬P |
+|---|----|
+| 1 | 0  |
+| 0 | 1  |
+
+#### Disyunción (O, ∨)
+| P | Q | P ∨ Q | Regla mnemotécnica |
+|---|---|-------|--------------------|
+| 1 | 1 |   1   | Verdadero si al menos uno es verdadero |
+| 1 | 0 |   1   |                    |
+| 0 | 1 |   1   |                    |
+| 0 | 0 |   0   | Falso solo si ambos son falsos |
+
+#### Conjunción (Y, ∧)
+| P | Q | P ∧ Q | Regla mnemotécnica |
+|---|---|-------|--------------------|
+| 1 | 1 |   1   | Verdadero solo si ambos son verdaderos |
+| 1 | 0 |   0   |                    |
+| 0 | 1 |   0   |                    |
+| 0 | 0 |   0   |                    |
+
+#### Implicación (→)
+| P | Q | P → Q | Explicación |
+|---|---|-------|-------------|
+| 1 | 1 |   1   | Si P es verdadero y Q es verdadero |
+| 1 | 0 |   0   | La única combinación falsa |
+| 0 | 0 |   1   | "Falso implica falso" es verdadero |
+| 0 | 1 |   1   | "Falso implica verdadero" es verdadero |
+
+#### Resumen rápido
+| Operador | Nombre | Se lee como | Ejemplo cotidiano |
+|----------|--------|-------------|-------------------|
+| ¬        | NOT    | "No"        | "No está lloviendo" |
+| ∨        | OR     | "O"         | "Llueve o hace sol" |
+| ∧        | AND    | "Y"         | "Llueve y hace frío" |
+| →        | THEN   | "Si... entonces" | "Si llueve, entonces me mojo" |
 
 ## Paso a paso para resolver el ejercicio
 
